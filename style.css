@@ -1,0 +1,54 @@
+*{
+    margin: 0;;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+}
+
+.mainBox {
+    max-width: 95%;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(43, 43, 43);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    border-radius: 8px;
+}
+.gameBox {
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gameBox:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.innerBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.innerBox span {
+    position: absolute;
+    font-size: 40px;
+}
+.active-cross #cross {
+    display: flex;
+}
+
+.active-nought #nought {
+    display: flex;
+}
